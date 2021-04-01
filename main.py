@@ -18,11 +18,8 @@ def calculate():
     feet = feet_spinbox.get()
     inches = inches_spinbox.get()
     weight = float(weight_entry.get())
-    print(weight)
     height = float(f"{feet}.{inches}")
-    print(height)
     height_in_meters = round(height / 3.281, 2)
-    print(height_in_meters)
     bmi = round(weight / (height_in_meters * height_in_meters), 2)
     result.config(text=bmi)
     if bmi < 18.5:
